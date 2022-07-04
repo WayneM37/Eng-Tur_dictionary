@@ -1,10 +1,11 @@
-"""This is simple dictionary. When you enter an English word it returns the Turkish \
+"""
+This is simple dictionary. When you enter an English word it returns the Turkish \
     translation. If the entered word is not in our dictionary, it asks to enter\
         the Turkish translation. Dict. data is stored in dict_2.json file. 
      """
 
 import json
-dict_1 = {"Blue": "Mavi", "Apple": "Elma"}
+dict_1 = {"Blue" : "Mavi", "Apple" : "Elma", "Table" : "Masa"}
 
 with open("dict_2.json", "r+", encoding="utf-8") as origin:
     temp = json.loads(origin.read())
