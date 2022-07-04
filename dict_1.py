@@ -7,8 +7,8 @@ This is simple dictionary. When you enter an English word it returns the Turkish
 import json
 dict_1 = {"Blue" : "Mavi", "Apple" : "Elma", "Table" : "Masa"}
 
-with open("dict_2.json", "r+", encoding="utf-8") as origin:
-    temp = json.loads(origin.read())
+with open("dict_2.json", "r+", encoding="utf-8") as origin:   #Bu şekilde localde bulunaun "dict_2.json" filini read yaptırıyoruz. 
+    temp = json.loads(origin.read())  # json modulunu kullandık. 
     origin.close()
 ans=""
 new= ""
@@ -22,7 +22,7 @@ while True:
       print(f"The word {entry} is not in our dictionary.")
       new = input(f"Please entter the Turkish translation of the word {entry} : ").title()
       dict_1.update({entry:new})
-      with open("dict_2.json", "w", encoding="utf-8") as origin:
+      with open("dict_2.json", "w", encoding="utf-8") as origin:  # girdiğimiz kelimeleri dict_2.json a kaydetti. 
         origin.write(json.dumps(dict_1))
         origin.close()
     break
