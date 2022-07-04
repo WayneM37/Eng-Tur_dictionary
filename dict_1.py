@@ -1,6 +1,6 @@
-"""This is simple dictionar. When you enter an English word it returns the Turkish \
-    translations. İf the entered word is not in our dictionary, it asks to enter\
-        the Turkish translation. Dict. data is tored in dict_2.json file. 
+"""This is simple dictionary. When you enter an English word it returns the Turkish \
+    translation. If the entered word is not in our dictionary, it asks to enter\
+        the Turkish translation. Dict. data is stored in dict_2.json file. 
      """
 
 import json
